@@ -1,63 +1,31 @@
-# My n8n Templates
+# My N8N Templates
 
-Kolekcja workflow'ów n8n do automatyzacji różnych procesów biznesowych i technicznych.
+This is a repository where I share my N8N templates.
 
-## 📋 Lista Workflow'ów
+## 🚀 Available Templates
 
-### RSS Reader to Google Sheets
-**Lokalizacja:** `RSS READER TO GOOGLE SHEETS/`
+- **RSS Reader to Google Sheets** - Automated RSS processing with AI summaries
+- **Export Markdown to Google Docs** - Convert Markdown content to Google Docs
 
-Zaawansowany workflow do automatycznego:
-- Czytania feedów RSS z listy w Google Sheets
-- Filtrowania duplikatów (sprawdza już przetworzone artykuły)
-- Pobierania pełnej treści artykułów
-- Generowania podsumowań AI za pomocą modelu Gemini
-- Zapisywania wyników do Google Sheets
+## 📦 How to Use
 
-**Funkcje:**
-- ⏰ Automatyczne uruchomienie co godzinę
-- 🔄 Filtrowanie artykułów z ostatnich X dni (konfigurowalny)
-- 🤖 Inteligentne podsumowania AI w strukturyzowanym formacie
-- 📊 Integracja z Google Sheets
-- 🚫 Automatyczne pomijanie duplikatów
+1. Download the JSON file
+2. Import it into your N8N instance  
+3. Configure your credentials
+4. You're ready to go!
 
-### Export Markdown Content to Google Docs
-**Lokalizacja:** `Export_Markdown_Content_do_Google_Docs_Document/`
+## 📄 License
 
-Workflow do eksportowania treści Markdown do dokumentów Google Docs.
+**CC BY-NC-SA 4.0** - You are free to use and modify these workflows for non-commercial purposes. Attribution to Roman Rozenberger is required. 
 
-## 🛠️ Konfiguracja
+For commercial licensing, contact: roman@rozenberger.com
 
-### Wymagania
-- Konto n8n (cloud lub self-hosted)
-- Konta Google (Sheets, Docs)
-- Klucze API dla usług AI (OpenRouter)
+## 📞 Contact
 
-### Instalacja
-1. Importuj plik JSON workflow'u do n8n
-2. Skonfiguruj credentiale dla:
-   - Google Sheets API
-   - Google Docs API
-   - OpenRouter API (dla AI)
-3. Dostosuj ustawienia w node'zie "Settings"
-
-## 📖 Dokumentacja
-
-Każdy workflow zawiera:
-- Plik JSON z definicją workflow'u
-- Instrukcje setup'u
-- Opis funkcjonalności
-- Przykłady konfiguracji
-
-## 🤝 Współpraca
-
-Jeśli masz pomysły na ulepszenia lub nowe workflow'y, otwórz issue lub wyślij pull request.
-
-## 📄 Licencja
-
-MIT License - możesz swobodnie używać, modyfikować i dystrybuować te workflow'y.
+**Roman Rozenberger**  
+🌐 https://rozenberger.com  
+📧 roman@rozenberger.com
 
 ---
 
-**Autor:** Roman Rozenberger  
-**Email:** roman@ibb.media
+*Feel free to contribute, report issues, or suggest improvements!*
