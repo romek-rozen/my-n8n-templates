@@ -24,7 +24,8 @@ For commercial licensing, contact: roman@rozenberger.com
 
 **Roman Rozenberger**  
 🌐 https://rozenberger.com  
-📧 roman@rozenberger.com
+📧 roman@rozenberger.com  
+🔗 https://n8n.io/creators/romek/
 
 ---
 
