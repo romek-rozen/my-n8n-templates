@@ -25,3 +25,6 @@ Copy the template Google Sheet, add your RSS feeds in the "RSS FEEDS" tab, confi
 ## How to customize
 
 Modify AI prompts for different summary styles, change the time filter duration, add more data fields to Google Sheets, or switch to a different AI model in the LLM Chat Model node.
+
+## 💝 Support
+If you find this template useful, consider [supporting my work](https://github.com/sponsors/romek-rozen)!
