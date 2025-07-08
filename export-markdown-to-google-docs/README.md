@@ -3,7 +3,7 @@
 Convert Markdown content to Google Docs document with automatic formatting, timestamping, and Drive organization.
 
 ![n8n workflow](https://img.shields.io/badge/n8n-workflow-FF6D5A?style=flat-square&logo=n8n)
-![Google Drive](https://img.shields.io/badge/Google%20Drive-integration-4285F4?style=flat-square&logo=google-drive)
+![Google Drive](https://img.shields.io/badge/Google%20Drive-integration-4285F4?style=flat-square&logo=googledrive)
 ![Markdown](https://img.shields.io/badge/Markdown-support-000000?style=flat-square&logo=markdown)
 
 ## 🎯 Who is this for?
