@@ -1,0 +1,1 @@
+Monitor RSS feeds with AI summaries to Google Sheets
