@@ -455,7 +455,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        -2760,
+        -2640,
         280
       ],
       "id": "852a3623-87a1-4a96-99f4-eb8303ab7c2c",
@@ -490,13 +490,13 @@
     {
       "parameters": {
         "content": "## Settings\n\n- Copy this Google Sheet : https://docs.google.com/spreadsheets/d/1i1p_DPymm8QeZrCLxs-Skz8BMSutKpUW4khzpiNBcYc/copy\n- Enter copied URL's in settings\n- Set up time gap for news from RSS",
-        "height": 420,
-        "width": 400
+        "height": 460,
+        "width": 300
       },
       "type": "n8n-nodes-base.stickyNote",
       "position": [
-        -2880,
-        80
+        -2720,
+        40
       ],
       "typeVersion": 1,
       "id": "e4b8e1da-e960-4774-8419-0ffce5df9b3f",
@@ -590,6 +590,21 @@
       "typeVersion": 1,
       "id": "68bb881d-8c0c-4c21-9fab-237bcc42f76e",
       "name": "Sticky Note2"
+    },
+    {
+      "parameters": {
+        "content": "# Monitor RSS feeds with AI summaries to Google Sheets\n\n## What this workflow does\n\nThis automation monitors multiple RSS feeds, filters new articles from the last X days, checks for duplicates, and generates AI-powered summaries. It fetches full article content, converts HTML to markdown, and uses Gemini AI to create structured summaries with quick takeaways, key points, and practical insights. All data is automatically saved to Google Sheets.\n\n## How it works\n\n1. **Read RSS feeds** from Google Sheets configuration\n2. **Filter articles** from the last X days (configurable)\n3. **Check for duplicates** by comparing URLs with existing Google Sheets data\n4. **Fetch full content** from article URLs\n5. **Convert HTML to Markdown** for better AI processing\n6. **Generate AI summaries** using Gemini AI with structured format\n7. **Save to Google Sheets** with article details and AI summary\n\n## Quick Setup\n\n1. **Copy the Google Sheet template**: https://docs.google.com/spreadsheets/d/1i1p_DPymm8QeZrCLxs-Skz8BMSutKpUW4khzpiNBcYc/copy\n\n2. **Update Settings node** with your copied Google Sheets URLs:\n   - Document URL (main sheet)\n   - Articles Sheet URL \n   - RSS Feeds Sheet URL\n\n3. **Add your RSS feeds** to the \"RSS FEEDS\" tab in your Google Sheet:\n   - RSS NAME (source name)\n   - RSS URL (feed URL)\n\n4. **Configure credentials**:\n   - Google Sheets OAuth2 API\n   - OpenRouter API key for Gemini AI\n\n5. **Adjust time filter** in Settings node (default: last 31 days)\n\n## Google Sheets Structure\n\n### Articles Sheet Columns\n| pubDate | source | title | link | categories | ai summary |\n\n### RSS FEEDS Sheet Columns  \n| RSS NAME | RSS URL |\n\n## Customization Options\n\n- **Change AI model**: Replace LLM Chat Model node with different provider\n- **Modify summary format**: Edit the AI prompt in \"Summarize Content\" node\n- **Adjust time filter**: Change \"Last X Days\" value in Settings node\n- **Add more data fields**: Extend Google Sheets columns and mapping\n\n## Scheduling\n\n- **Manual trigger**: Click \"Execute workflow\" button\n- **Automatic**: Runs every hour using Schedule Trigger (configurable)\n",
+        "height": 1680,
+        "width": 700
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -3840,
+        -540
+      ],
+      "typeVersion": 1,
+      "id": "396e077e-aba2-4b89-bb0b-7aece91b924b",
+      "name": "Sticky Note3"
     }
   ],
   "pinData": {},
@@ -818,7 +833,7 @@
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "3d4b528a-4f45-4a3c-b9a9-58e885f6fdbc",
+  "versionId": "e4722701-47f2-4a88-9492-6405cc67cab8",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "e8794a4f970040d09c64040698c632aefaa9a59e97e60424e4b5671338351753"

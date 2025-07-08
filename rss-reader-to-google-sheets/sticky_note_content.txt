@@ -1,0 +1,57 @@
+# Monitor RSS feeds with AI summaries to Google Sheets
+
+## What this workflow does
+
+This automation monitors multiple RSS feeds, filters new articles from the last X days, checks for duplicates, and generates AI-powered summaries. It fetches full article content, converts HTML to markdown, and uses Gemini AI to create structured summaries with quick takeaways, key points, and practical insights. All data is automatically saved to Google Sheets.
+
+## How it works
+
+1. **Read RSS feeds** from Google Sheets configuration
+2. **Filter articles** from the last X days (configurable)
+3. **Check for duplicates** by comparing URLs with existing Google Sheets data
+4. **Fetch full content** from article URLs
+5. **Convert HTML to Markdown** for better AI processing
+6. **Generate AI summaries** using Gemini AI with structured format
+7. **Save to Google Sheets** with article details and AI summary
+
+## Quick Setup
+
+1. **Copy the Google Sheet template**: https://docs.google.com/spreadsheets/d/1i1p_DPymm8QeZrCLxs-Skz8BMSutKpUW4khzpiNBcYc/copy
+
+2. **Update Settings node** with your copied Google Sheets URLs:
+   - Document URL (main sheet)
+   - Articles Sheet URL 
+   - RSS Feeds Sheet URL
+
+3. **Add your RSS feeds** to the "RSS FEEDS" tab in your Google Sheet:
+   - RSS NAME (source name)
+   - RSS URL (feed URL)
+
+4. **Configure credentials**:
+   - Google Sheets OAuth2 API
+   - OpenRouter API key for Gemini AI
+
+5. **Adjust time filter** in Settings node (default: last 31 days)
+
+## Google Sheets Structure
+
+### Articles Sheet Columns
+| pubDate | source | title | link | categories | ai summary |
+
+### RSS FEEDS Sheet Columns  
+| RSS NAME | RSS URL |
+
+## Customization Options
+
+- **Change AI model**: Replace LLM Chat Model node with different provider
+- **Modify summary format**: Edit the AI prompt in "Summarize Content" node
+- **Adjust time filter**: Change "Last X Days" value in Settings node
+- **Add more data fields**: Extend Google Sheets columns and mapping
+
+## Scheduling
+
+- **Manual trigger**: Click "Execute workflow" button
+- **Automatic**: Runs every hour using Schedule Trigger (configurable)
+
+## 💝 Support
+If you find this template useful, consider [supporting my work](https://github.com/sponsors/romek-rozen)!
