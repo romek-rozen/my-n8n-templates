@@ -1,0 +1,33 @@
+# Convert Markdown content to Google Docs document with automatic formatting
+
+## Who is this for?
+
+This workflow is perfect for **technical writers**, **content creators**, **marketers**, and **developers** who write in Markdown but need to collaborate or publish using Google Docs format. Ideal for teams that want to streamline their content creation and review process.
+
+## What problem does this workflow solve?
+
+Manual conversion from Markdown to Google Docs is time-consuming and often loses formatting. This workflow eliminates the tedious copy-paste process, automatically preserves formatting, and creates organized, timestamped documents in your Google Drive. Perfect for content teams who write in Markdown but need Google Docs for collaboration and review.
+
+## What this workflow does
+
+- **Converts Markdown to HTML** with proper formatting preservation (headers, lists, links, tables)
+- **Creates timestamped Google Docs** documents with automatic naming
+- **Adds Drive location metadata** for better organization and reference
+- **Maintains document structure** including emojis, tables, and text formatting
+- **Automates file creation** in specified Google Drive folders
+
+## Setup
+
+- Google Drive OAuth2 credentials configured in n8n
+- Target Google Drive folder URL
+- Input your content title and Markdown text in the "Set Input Data" node
+
+## How to customize this workflow to your needs
+
+- **Modify HTML formatting options** in the Markdown conversion node
+- **Change file naming patterns** to match your organization system  
+- **Adjust Drive folder structure** and metadata inclusion
+- **Update MIME type handling** for different output requirements
+- **Add additional processing steps** like notifications or integrations
+
+Perfect for technical documentation workflows, content publishing pipelines, blog preparation, and automated report generation.

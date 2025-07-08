@@ -1,0 +1,29 @@
+📝 Markdown to Google Docs Converter
+
+🎯 PURPOSE: Convert Markdown content to formatted Google Docs documents with automatic timestamping and Drive organization
+
+⚙️ SETUP REQUIRED:
+• Google Drive OAuth2 credentials configured in n8n
+• Target Google Drive folder URL
+• Content title and Markdown text input
+
+📋 HOW TO USE:
+1. Configure Google Drive credentials in n8n settings
+2. Update "Set Input Data" node with:
+   - Google Drive URL (target folder)
+   - Content Title (document name)
+   - Content in Markdown (your text)
+3. Click "Test workflow" to execute
+4. Check your Google Drive for timestamped document
+
+🔧 CUSTOMIZE:
+• Modify HTML formatting options in "Change Markdown To HTML" node
+• Adjust file naming pattern in "Create Empty File" node  
+• Change Drive location metadata in "Add Information About Google Drive Location"
+• Update MIME type handling in "Change Mime Type of The File"
+
+💡 USE CASES:
+• Technical documentation (README → Google Docs)
+• Content publishing workflow (draft → review)
+• Blog/article preparation (Markdown → collaborative editing)
+• Report generation with automated formatting

@@ -1,0 +1,26 @@
+# Katalogi do ignorowania
+.clinerules/
+MCP-01/
+
+# Pliki systemowe macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Pliki tymczasowe
+*.tmp
+*.temp
+*.log
+
+# Dane wrażliwe (jeśli będą)
+*.env
+credentials.json
+config.json
+
+# Pliki backup
+*.bak
+*.backup
