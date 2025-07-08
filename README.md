@@ -1,11 +1,6 @@
 # My N8N Templates
 
-This is a repository where I share my N8N templates.
-
-## 🚀 Available Templates
-
-- **RSS Reader to Google Sheets** - Automated RSS processing with AI summaries
-- **Export Markdown to Google Docs** - Convert Markdown content to Google Docs
+This is a public repository where I share my N8N templates.
 
 ## 📦 How to Use
 
